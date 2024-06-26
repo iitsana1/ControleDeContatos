@@ -1,10 +1,12 @@
 ﻿using ControleDeContatos.Data;
 using ControleDeContatos.Models;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 
 namespace ControleDeContatos.Controllers
 {
+    [Authorize(Roles = "Usuario, Admin, Gerente")]
     public class ContatoController : Controller
     {
         private readonly BancoContext _context;

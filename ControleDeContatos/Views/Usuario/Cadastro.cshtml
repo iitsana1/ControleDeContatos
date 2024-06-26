@@ -1,0 +1,23 @@
+﻿@model UsuarioModel;
+]<form class="form" asp-action="Cadastro" asp-controller="Usuario">
+    <p class="title">Cadastre-se</p>
+    <p class="message">Cadas </p>
+    <div class="flex">
+        <label>
+            <input required="" placeholder="" type="text" class="input" asp-for="Nome">
+            <span>Nome completo</span>
+        </label>
+    </div>
+
+    <label>
+        <input required="" placeholder="" type="email" class="input" asp-for="Email">
+        <span>Email</span>
+    </label>
+
+    <label>
+        <input required="" placeholder="" type="password" class="input" asp-for="Senha">
+        <span>Senha</span>
+    </label>
+    <button class="submit" type="submit">Cadastrar</button>
+    <p class="signin">Já possui uma conta? <a href="#">Login</a> </p>
+</form>

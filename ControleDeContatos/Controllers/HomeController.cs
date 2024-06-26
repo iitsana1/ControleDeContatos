@@ -1,9 +1,11 @@
 using ControleDeContatos.Models;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
 
 namespace ControleDeContatos.Controllers
 {
+    [Authorize (Roles = "Usuario, Admin, Gerente")]
     public class HomeController : Controller
     {
 

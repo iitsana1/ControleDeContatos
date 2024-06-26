@@ -8,5 +8,8 @@ namespace ControleDeContatos.Data
         public BancoContext(DbContextOptions<BancoContext> options) : base(options){}
 
         public DbSet<ContatoModels> Contato { get; set; }
+
+        public DbSet<UsuarioModel> Usuario { get; set; }
+
     }
 }

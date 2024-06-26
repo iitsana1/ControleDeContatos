@@ -1,0 +1,20 @@
+﻿@model UsuarioModel;
+@{
+    ViewData["Title"] = "Login";
+}
+<div class="container">
+    <div class="form-box">
+        <form class="form" asp-action="Login" asp-controller="Usuario">
+            <span class="title">Login</span>
+            <span class="subtitle">Entre já</span>
+            <div class="form-container">
+                <input type="email" class="input" placeholder="Email" asp-for="Email">
+                <input type="password" class="input" placeholder="Senha" asp-for="Senha">
+            </div>
+            <button type="submit">Login</button>
+        </form>
+        <div class="form-section">
+            <p>Não possui conta <a href="">Cadastre-se!</a> </p>
+        </div>
+    </div>
+</div>
